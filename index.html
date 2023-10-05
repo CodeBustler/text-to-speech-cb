@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Text to Speech | 75/100 Projects By CodeBustler</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/81d73e8e4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text To Speech</h1>
+      <textarea
+        id="inputText"
+        placeholder="Write something...."
+        rows="8"
+      ></textarea>
+      <div class="tools row1">
+        <select name="voices" id="voices">
+          <option value="" selected>Select Voice</option>
+        </select>
+        <!-- LISTEN BUTTON -->
+        <button id="speechListen">
+          Listen <i class="fa-solid fa-volume-high"></i>
+        </button>
+      </div>
+      <br />
+      <div class="tools row2">
+        <button id="speechPause">
+          <i class="fa-solid fa-pause"></i> Pause
+        </button>
+        <button id="speechResume">
+          <i class="fa-solid fa-play"></i> Resume
+        </button>
+        <button id="speechCancel">
+          <i class="fa-solid fa-xmark"></i> Cancel
+        </button>
+      </div>
+      <p class="message">Message</p>
+    </div>
+    <footer>By CodeBustler</footer>
+  </body>
+</html>
